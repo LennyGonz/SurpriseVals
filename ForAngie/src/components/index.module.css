@@ -1,0 +1,68 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff6f8;
+  padding: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.mainImage {
+  width: min(360px, 80vw);
+  height: auto;
+  display: block;
+}
+
+.question {
+  font-size: 28px;
+  margin: 0;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 56px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.yesButton,
+.noButton {
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 160ms ease, opacity 160ms ease, padding 160ms ease,
+    font-size 160ms ease;
+}
+
+.yesButton {
+  background: #ff5c8a;
+  color: #ffffff;
+  --scale: 1;
+  padding: calc(12px * var(--scale)) calc(20px * var(--scale));
+  font-size: calc(16px * var(--scale));
+}
+
+.noButton {
+  background: #f2f2f2;
+  color: #222222;
+}
+
+.yesButton:disabled,
+.noButton:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
