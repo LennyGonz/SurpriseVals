@@ -17,7 +17,7 @@ const IndexPage = () => {
     if (!hasAccepted) return
     const intervalId = setInterval(() => {
       setAcceptedIndex(index => (index + 1) % 2)
-    }, 2000)
+    }, 4000)
     return () => clearInterval(intervalId)
   }, [hasAccepted])
 
