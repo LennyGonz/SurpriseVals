@@ -34,14 +34,20 @@ const IndexPage = () => {
   }
 
   let noLabel = "No"
-  if (noCount >= 8) {
-    noLabel = "is it because im not Josh Allen"
-  } else if (noCount >= 6) {
-    noLabel = "Are you deadass ?!?! "
-  } else if (noCount >= 4) {
-    noLabel = "Last chance"
-  } else if (noCount > 0) {
+  if (noCount >= 7) {
+    noLabel = "Harry Styles would steal clothes from your closet..."
+  } else if (noCount === 6) {
+    noLabel = "Paul Mescal would never get this much rejection from you"
+  } else if (noCount === 5) {
+    noLabel = "Is it because I'm not Josh Allen ?"
+  } else if (noCount === 4) {
+    noLabel = "Stop playing, I will cry"
+  } else if (noCount === 3) {
+    noLabel = "Are you deadass ?!"
+  } else if (noCount === 2) {
     noLabel = "Are you sure you're sure?"
+  } else if (noCount === 1) {
+    noLabel = "Are you sure?"
   }
   const yesScale = Math.min(1 + noCount * 0.18, 8)
 
